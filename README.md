@@ -1,8 +1,6 @@
 # SQL and PostgreSQL: The Complete Developer's Guide
 ## Stephen Grider Udemy Course
 ---
-## High Level Notes
-
 ### Database Design Process
 
 Database Design Process
