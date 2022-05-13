@@ -1,0 +1,2 @@
+-- Join together the users and orders tables. Print the first_name and last_name of each user,
+-- then whether or not that have paid for thier order.
