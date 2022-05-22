@@ -6,6 +6,5 @@ SELECT * FROM products
 ORDER BY name ASC;
 
 -- Sort by charecters (Z-A)
-
 SELECT * FROM products
 ORDER BY name DESC;

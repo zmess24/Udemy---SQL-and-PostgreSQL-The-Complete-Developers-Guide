@@ -9,4 +9,4 @@
 
 * `SELECT * FROM orders` - Many rows, many columns.
 * `SELECT id FROM orders` - Many rows, one column.
-* `SELECT COUNT(*) FROM orders` - One row, one column.
+* `SELECT COUNT(*) FROM orders` - One row, one column (Scalar query).

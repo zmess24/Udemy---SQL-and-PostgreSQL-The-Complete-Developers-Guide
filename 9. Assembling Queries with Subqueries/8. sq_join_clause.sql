@@ -1,0 +1,13 @@
+SELECT first_name
+FROM users
+JOIN (
+	SELECT user_id FROM orders WHERE product_id = 3
+) AS o
+ON o.user_id = users.id;
+
+-- Without subquery
+SELECT first_name
+from users
+JOIN orders
+ON orders.user_id = users.id
+WHERE orders.product_id = 3; 
