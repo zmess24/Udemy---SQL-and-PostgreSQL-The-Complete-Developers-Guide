@@ -51,3 +51,41 @@
 * Guarenteed that validation is always applied.
 * Can only apply new validation rules if all existing rows satisfy it.
 * Opinion: Critical validation goes here.
+
+---
+
+### Instagram Schema
+
+```sql
+    Table users {
+    id SERIAL [pk, increment]
+    created_at TIMESTAMP
+    updated_at TIMESTAMP
+    username VARCHAR(30)
+    }
+
+    Table posts {
+    id SERIAL [pk, increment]
+    created_at TIMESTAMP
+    updated_at TIMESTAMP
+    url VARCHAR(240)
+    user_id INTEGER [ref: > users.id]
+    }
+
+    Table comments {
+    id SERIAL [pk, increment]
+    created_at TIMESTAMP
+    updated_at TIMESTAMP
+    contents VARCHAR(200)
+    user_id INTEGER [ref: > users.id]
+    post_id INTEGER [ref: > posts.id]
+    }
+
+    Table likes {
+    id SERIAL [pk, increment]
+    created_at TIMESTAMP
+    user_id INTEGER [ref: > users.id]
+    comment_id INTEGER [ref: > comments.id]
+    post_id INTEGER [ref: > posts.id]
+    }
+```
