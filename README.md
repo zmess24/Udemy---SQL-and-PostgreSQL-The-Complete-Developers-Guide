@@ -36,3 +36,16 @@
 | VARCHAR          | Store any length of string                                                     |                                                      |
 | VARCHAR(40)      | Store a string up to 40 characters, automatically remove extra characters      |                                                      |
 | TEXT             | Store any length of string                                                     |                                                      |
+
+
+### Where to Add Validation
+
+**Web Server**
+* Easier to express more complex validation.
+* Far easier to apply new validation rules.
+* Many libraries to handle validation automatically.
+
+**Database**
+* Validation still applied even if you connect with a different client.
+* Guarenteed that validation is always applied.
+* Can only apply new validation rules if all existing rows satisfy it.
