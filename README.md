@@ -21,3 +21,18 @@
 * **WHERE**: Filters the set of rows.
 * **GROUP BY**: Groups row by a unique set of values.
 * **HAVING**: Filters the set of groups.
+
+### Data Types
+
+#### Numeric Data Types
+
+| Type             | Descrption                                                                     | Examples                                             |
+|------------------|--------------------------------------------------------------------------------|------------------------------------------------------|
+| Serial           | ID column of any table                                                         | -                                                    |
+| Integer          | Number without a decimal                                                       | -                                                    |
+| Numeric          | Number with a decimal and the data needs to be accurate                        | Bank balance, grams of gold, scientific calculations |
+| Double Precision | Number without a decimal, and the decimal doesn't make a big difference        | Liters of water in a lake, air pressure in a tire.   |
+| CHAR(5)          | Store some characters, length will always be 5 even if PG has to insert spaces |                                                      |
+| VARCHAR          | Store any length of string                                                     |                                                      |
+| VARCHAR(40)      | Store a string up to 40 characters, automatically remove extra characters      |                                                      |
+| TEXT             | Store any length of string                                                     |                                                      |
